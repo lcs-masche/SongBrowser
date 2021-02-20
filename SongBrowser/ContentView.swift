@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // keeps track of what the user is searching for.
+    @State private var searchText = ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            
+            SearchBarView(text: $searchText)
+            Spacer()
+        }
     }
 }
 
