@@ -17,7 +17,10 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            
+            Text("Search A Song")
+                .font(.title)
+                .fontWeight(.bold)
+                .padding([.leading, .bottom, .trailing])
             
             
             SearchBarView(text: $searchText)
@@ -36,15 +39,8 @@ struct ContentView: View {
                 // search text was given show list of results
                 // keypath of \.tracID
                 List(songs, id: \.trackId) { currentSong in
-                    
-                    VStack(alignment: .leading) {
-                        Text(currentSong.trackName)
-                            .font(.subheadline)
-                        
-                        
-                        Text(currentSong.artistName)
-                            .font(.caption)
-                    }
+                    SimpleListItemView( title: currentSong.trackId,
+                                        s)
                     
                 }
             }
@@ -57,8 +53,10 @@ struct ContentView: View {
     //FUnctions
     func fetchSongResults() {
         
+        //sanitize search input
+        let input = searchText.lowercased().replacingOccurrences(of: " ", with: "+")
         // Set the address of the JSON endpoint
-        let url = URL(string: "https://itunes.apple.com/search?term=taylor+swift&entity=song")!
+        let url = URL(string: "https://itunes.apple.com/search?term=\(input)&entity=song")!
         
         // Configure a URLRequest instance
         // Defines what type of request will be sent to the address noted above

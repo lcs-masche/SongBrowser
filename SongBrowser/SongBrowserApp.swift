@@ -15,3 +15,4 @@ struct SongBrowserApp: App {
         }
     }
 }
+
