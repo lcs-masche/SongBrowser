@@ -14,11 +14,11 @@ struct SimpleListItemView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(title.trackName)
+            Text(title)
                 .font(.subheadline)
             
             
-            Text(caption.artistName)
+            Text(caption)
                 .font(.caption)
         }
     }

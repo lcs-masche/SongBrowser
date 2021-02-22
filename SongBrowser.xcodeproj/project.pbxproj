@@ -15,6 +15,10 @@
 		3D3DA1F925E15E13005239D3 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3DA1F825E15E13005239D3 /* Song.swift */; };
 		3D3DA1FC25E15E99005239D3 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3DA1FB25E15E99005239D3 /* SearchResult.swift */; };
 		3D3DA20325E410C0005239D3 /* SimpleListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3DA20225E410BF005239D3 /* SimpleListItemView.swift */; };
+		3D3DA20825E414D3005239D3 /* SongDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3DA20725E414D3005239D3 /* SongDetailView.swift */; };
+		3D3DA20C25E414F2005239D3 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3DA20B25E414F2005239D3 /* ItemDetailView.swift */; };
+		3D3DA20F25E41502005239D3 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3DA20E25E41502005239D3 /* RemoteImageView.swift */; };
+		3D3DA21225E41513005239D3 /* RemoteAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3DA21125E41513005239D3 /* RemoteAudioView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		3D3DA1F825E15E13005239D3 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		3D3DA1FB25E15E99005239D3 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		3D3DA20225E410BF005239D3 /* SimpleListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListItemView.swift; sourceTree = "<group>"; };
+		3D3DA20725E414D3005239D3 /* SongDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailView.swift; sourceTree = "<group>"; };
+		3D3DA20B25E414F2005239D3 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		3D3DA20E25E41502005239D3 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		3D3DA21125E41513005239D3 /* RemoteAudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAudioView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,10 @@
 			children = (
 				3D3DA1E025E158E9005239D3 /* ContentView.swift */,
 				3D3DA1F225E159ED005239D3 /* SearchBarView.swift */,
+				3D3DA20725E414D3005239D3 /* SongDetailView.swift */,
+				3D3DA20B25E414F2005239D3 /* ItemDetailView.swift */,
+				3D3DA20E25E41502005239D3 /* RemoteImageView.swift */,
+				3D3DA21125E41513005239D3 /* RemoteAudioView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,9 +179,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D3DA1F925E15E13005239D3 /* Song.swift in Sources */,
+				3D3DA20F25E41502005239D3 /* RemoteImageView.swift in Sources */,
 				3D3DA1E125E158E9005239D3 /* ContentView.swift in Sources */,
 				3D3DA1FC25E15E99005239D3 /* SearchResult.swift in Sources */,
+				3D3DA20825E414D3005239D3 /* SongDetailView.swift in Sources */,
+				3D3DA20C25E414F2005239D3 /* ItemDetailView.swift in Sources */,
 				3D3DA1F325E159ED005239D3 /* SearchBarView.swift in Sources */,
+				3D3DA21225E41513005239D3 /* RemoteAudioView.swift in Sources */,
 				3D3DA1DF25E158E9005239D3 /* SongBrowserApp.swift in Sources */,
 				3D3DA20325E410C0005239D3 /* SimpleListItemView.swift in Sources */,
 			);

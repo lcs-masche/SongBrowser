@@ -16,13 +16,10 @@ struct ContentView: View {
     @State private var songs: [Song] = []
     
     var body: some View {
+        
         VStack {
-            Text("Search A Song")
-                .font(.title)
-                .fontWeight(.bold)
-                .padding([.leading, .bottom, .trailing])
-            
-            
+
+
             SearchBarView(text: $searchText)
                 .onChange(of: searchText) { _ in
                     fetchSongResults()
@@ -31,22 +28,33 @@ struct ContentView: View {
             //show a promt when no text is given
             if searchText.isEmpty {
                 Spacer()
-                Text("Please enter a song/artist name")
+                Text("Please enter a song/artist")
                     .font(.title)
                     .foregroundColor(.secondary)
                 Spacer()
             } else {
                 // search text was given show list of results
                 // keypath of \.tracID
+                
+                
                 List(songs, id: \.trackId) { currentSong in
-                    SimpleListItemView( title: currentSong.trackId,
-                                        s)
+                    
+                    NavigationLink(destination: SongDetailView(song: currentSong)) {
+                        
+                        SimpleListItemView( title: currentSong.trackName,
+                                            caption: currentSong.artistName)
+                    }
+                        
+                    
+            
                     
                 }
             }
             
             
         }
+
+        .navigationTitle("Song Browser")
     }
     
     
